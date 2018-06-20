@@ -1,1 +1,21 @@
-<p2>Contact us!</p2>
+<h2>Contact us!</h2>
+
+
+<%= form_for :contact, url: contacts_path do |f| %>
+	<!-- Analog - peremennaya v rails  	url: articles_path -->
+
+	<p>
+		<%= f.label :email %><br />
+		<%= f.text_field :email %>
+	</p>
+
+	<p>
+		<%= f.label :message %><br />
+		<%= f.text_area :message %>
+	</p>
+
+	<p>
+		<%= f.submit 'Send message' %><br />
+	</p>
+
+<% end %>
