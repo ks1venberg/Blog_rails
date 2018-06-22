@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   get 'home/terms'
   get 'home/about'
 
-
 # get 'contacts' => 'contacts#new'
 # resource :contacts, only: [:create] 
 
