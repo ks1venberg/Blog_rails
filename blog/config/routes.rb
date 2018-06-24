@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   get 'home/index'
 
-  get 'home/terms'
-  get 'home/about'
+  # get 'home/terms'
+  # get 'home/about'
 
+get 'terms' => 'pages#terms'
+get 'about' => 'pages#about'
 # get 'contacts' => 'contacts#new'
 # resource :contacts, only: [:create] 
 
