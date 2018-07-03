@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+    <link data-require="bootstrap@*" data-semver="4.1.1" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+    
     <title>Blog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -8,6 +11,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
    <body>
 
      <!-- <a href="/users/sign_in">Sign In</a> <a href="/users/sign_out" data-method="delete">Sign Out</a> -->
@@ -23,5 +27,6 @@
        <p class="alert"><%= alert %></p>
  
     <%= yield %>
+
   </body>
 </html>
