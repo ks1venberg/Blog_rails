@@ -41,6 +41,9 @@ Rails.application.configure do
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 
+  #It is possible to opt-out of checking for pending migrations
+  #config.active_record.maintain_test_schema = false
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
