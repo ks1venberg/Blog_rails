@@ -84,10 +84,10 @@ GEM
     duktape (2.0.1.0)
     erubi (1.7.1)
     execjs (2.7.0)
-    factory_girl (4.9.0)
+    factory_bot (4.10.0)
       activesupport (>= 3.0.0)
-    factory_girl_rails (4.9.0)
-      factory_girl (~> 4.9.0)
+    factory_bot_rails (4.10.0)
+      factory_bot (~> 4.10.0)
       railties (>= 3.0.0)
     ffi (1.9.25-x64-mingw32)
     globalid (0.4.1)
@@ -234,7 +234,8 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
   duktape
-  factory_girl_rails
+  factory_bot
+  factory_bot_rails
   jbuilder (~> 2.5)
   puma (~> 3.11)
   rails (~> 5.2.0)
