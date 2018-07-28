@@ -3,7 +3,7 @@ require "rails_helper"
 describe Article do
     describe "validations" do
         it { should validate_presence_of(:title) }
-        it { should validate_length_of(:title), minimum: 3, on: :create }
+        #it { should validate_length_of(:title), minimum: 15, on: :create }
         it { should validate_presence_of(:atext) }
     end
 
@@ -27,5 +27,7 @@ describe Article do
 
         expect(article.last_comment.body).to eq "comment body 3"
       end
+            it { should validate_length_of(:atext), minimum: 20}
+            it { should validate_length_of(:title), minimum: 20}
     end 
 end
