@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :article do
-    title "Article test theme"
+    title "a"
     atext "Article test text"
 
     factory :article_with_comments do
