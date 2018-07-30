@@ -1,8 +1,13 @@
 require "rails_helper"
 
 feature "Create_Account" do
-
   scenario "Allow guest to create account" do
+    sign_up
+    expect(page).to have_content I18n.t('devise.registrations.signed_up')
+  end 
+end
+
+def sign_up
     visit new_user_registration_path
 
     fill_in :user_username, :with => 'TestUser'
@@ -12,8 +17,4 @@ feature "Create_Account" do
 
     click_button 'Sign up'
 
-    expect(page).to have_content I18n.t('devise.registrations.signed_up')
-
-  end
-  
 end
