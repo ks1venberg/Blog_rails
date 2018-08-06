@@ -32,5 +32,19 @@
 en:
   hello: "Hello world"
 
+  pages:
+    welcome: "Welcome to RubySchool blog!"
+    about: "About this blog"
+    terms: "Terms or use"
+
   contacts:
     contact_us: "Contact Us!"
+
+  articles:
+    new: "New article"
+    edit: "Edit this article"
+    list: "List of articles"
+
+  comments:
+    c_head: "Comments to this article"
+    add: "Add you comment"
