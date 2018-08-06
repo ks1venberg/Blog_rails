@@ -1,4 +1,3 @@
-
 def sign_up
     visit new_user_registration_path
 
