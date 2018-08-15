@@ -5,7 +5,6 @@ describe Article do
     describe "validations" do
         it { should validate_presence_of(:title) }
         it { should validate_presence_of(:atext) }
-        it { should validate_length_of(:title), minimum: 15 }
     end
 
     describe "assoсiations" do
@@ -27,7 +26,6 @@ describe Article do
       it "returns the last comment" do
         article = create(:article_with_comments)
         expect(article.last_comment.body).to eq "comment body 3"
-        should validate_length_of(article.last_comment.body), minimum: 15
       end
     end
 

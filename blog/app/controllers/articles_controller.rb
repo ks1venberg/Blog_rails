@@ -18,6 +18,7 @@ class ArticlesController < ApplicationController
     #render plain: params[:article].inspect
 
       if @article.valid?
+        @article.title = @article.title.sub! (/^\s*/), ''
         @article.save
         redirect_to @article
       else
